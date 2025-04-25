@@ -1,30 +1,15 @@
 "use client"
-
 import styles from "@/styles/page.module.css";
 import FetchButton from "./components/fetchButton";
-import PostInput from "./components/postInput";
-import { useState } from "react";
-import { postIdea } from "@/lib/newIdea";
+import PostSection from "./components/PostSection";
 
 export default function Home() {
-  const [value, setValue] = useState("");
 
-  const handleInput = (e) => {
-    const inputValue = e.target.value;
-    setValue(inputValue);
-
-    const title = inputValue;
-    const description = null;
-    const category = "testing";
-
-    postIdea(title, description, category);
-  };
 
   return (
     <div className={styles.container}>
       <FetchButton />
-      <p>{value} </p>
-      <PostInput data={handleInput} />
+      <PostSection />
     </div>
   )
 }

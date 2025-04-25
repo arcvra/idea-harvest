@@ -1,8 +1,6 @@
-"use client"
-import { useState } from "react";
 import styles from "@/styles/buttons.module.css";
 
-export default function PostInput({ data }) {
+export default function PostInput({ value, data }) {
 
     return (
         <label
@@ -13,6 +11,7 @@ export default function PostInput({ data }) {
             <input
                 id="newIdea"
                 onChange={data}
+                value={value}
                 placeholder="Feeling inspired?"
                 className={styles.input_fetch}
             />
