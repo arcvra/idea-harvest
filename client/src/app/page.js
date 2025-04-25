@@ -12,7 +12,12 @@ export default function Home() {
   const handleInput = (e) => {
     const inputValue = e.target.value;
     setValue(inputValue);
-    postIdea(inputValue);
+
+    const title = inputValue;
+    const description = null;
+    const category = "testing";
+
+    postIdea(title, description, category);
   };
 
   return (
