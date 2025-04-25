@@ -1,5 +1,30 @@
-node_modules/
-.env
-.env.local
-.db
-.vscode
+# Ignore dependencies and environment files
+node_modules/       # Node.js dependencies
+**/node_modules/
+
+.env                # Environment variables file
+.env.local          # Local environment variables file
+
+
+# Ignore database and editor-specific files
+*.db                # Database files
+.vscode             # Visual Studio Code settings folder
+
+# Ignore logs and backup files
+*.log               # Log files
+*.bak               # Backup files
+
+# Ignore OS-specific files
+.DS_Store           # macOS Finder metadata
+Thumbs.db           # Windows Explorer thumbnail cache
+
+# Ignore build and output directories
+.out/               put directory
+dist/               tribution folder
+build/              # Build folder
+
+# Ignore temporary and swap files
+*.swp               # Swap files (e.g., Vim)
+*.tmp               # Temporary files
+
+client/
