@@ -13,7 +13,7 @@ import { APIpostNew } from "./routes/postIdea.js";
 const PORT = process.env.PORT || 5000;
 
 // app usage
-const app = express();
+export const app = express();
 app.use(express.json());
 app.use(cors());
 
