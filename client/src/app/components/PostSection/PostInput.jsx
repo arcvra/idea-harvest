@@ -1,4 +1,4 @@
-import styles from "@/styles/buttons.module.css";
+import styles from "@/styles/postSection.module.css";
 
 export default function PostInput({ value, data }) {
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import PostButton from "./PostButton";
 import PostDescription from "./PostDescription";
 
+import styles from "@/styles/postSection.module.css";
 export default function PostSection() {
 
     const [value, setValue] = useState("");
@@ -37,10 +38,10 @@ export default function PostSection() {
     }
 
     return (
-        <section>
-            <PostButton post={handleClick} />
+        <section className={styles.section}>
             <PostInput value={value} data={handleInput} />
             <PostDescription value={descriptionValue} data={handleDescriptionInput} />
+            <PostButton post={handleClick} />
         </section>
     )
 }

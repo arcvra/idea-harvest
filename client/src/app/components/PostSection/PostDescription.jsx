@@ -1,4 +1,4 @@
-import styles from "@/styles/input.module.css";
+import styles from "@/styles/postSection.module.css";
 
 export default function PostDescription({ value, data }) {
     return (
@@ -12,7 +12,7 @@ export default function PostDescription({ value, data }) {
                 onChange={data}
                 value={value}
                 placeholder="Explain yourself freely"
-                className={styles.textarea_fetch}
+                className={styles.input_fetch}
             />
         </label>
     )
