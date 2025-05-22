@@ -1,8 +1,9 @@
-export const Input = () => {
+export const Input = ({ placeholder, action }) => {
     return (
         <input
             type="text"
-            placeholder="input"
+            placeholder={placeholder}
+            onChange={action}
         />
     )
 }
