@@ -5,6 +5,7 @@
  * @param {string} [value=""] - Controlled value
  * @param {string} [name] - Input's name (used for forms)
  * @param {string} [id] - Input's ID (used for labels)
+ * @param {number} [maxLength] - Input's max lenght
  * @param {string} [className] - Tailwind or custom classes
  * @param {boolean} [autoComplete=false] - Enable autocomplete
  * @param {boolean} [required] - Whether the field is required
@@ -18,6 +19,7 @@ export const Input = ({
     value = "",
     name,
     id,
+    maxLength = 30,
     className = "",
     autoComplete = false,
     required = false,
@@ -30,6 +32,7 @@ export const Input = ({
             placeholder={placeholder}
             name={name}
             id={id}
+            maxLength={maxLength}
             className={`px-2 py-1 border border-zinc-300 rounded-md placeholder-neutral-500 ${className}`}
             autoComplete={autoComplete}
             required={required}
