@@ -11,7 +11,8 @@ import { postIdea } from "@/lib/newIdea";
  *   handleConceptInput: function,
  *   handleDescriptionInput: function,
  *   handleCategoryInput: function,
- *   handleClick: function
+ *   handleClick: function,
+ *   handleSubmit: function,
  * }} - An object containing form values and handlers
  */
 
@@ -44,6 +45,15 @@ export const usePostForm = () => {
         setCategoryValue("");
     }
 
+    /**
+     * Handles form submit and prevents default event
+     * @param {event} e - Form submit event
+     */
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        handleClick();
+    }
+
     return {
         conceptValue,
         descriptionValue,
@@ -51,6 +61,7 @@ export const usePostForm = () => {
         handleConceptInput,
         handleDescriptionInput,
         handleCategoryInput,
-        handleClick
+        handleClick,
+        handleSubmit
     };
 }
