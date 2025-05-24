@@ -11,7 +11,7 @@ import { postIdea } from "@/lib/newIdea";
  *   handleConceptInput: function,
  *   handleDescriptionInput: function,
  *   handleCategoryInput: function,
- *   handleClick: function,
+ *   submitForm: function,
  *   handleSubmit: function,
  * }} - An object containing form values and handlers
  */
@@ -30,7 +30,7 @@ export const usePostForm = () => {
      * Assigns concept, description and category input values
      * Updates DB data using postIdea util
      */
-    const handleClick = () => {
+    const submitForm = () => {
 
         const title = conceptValue || null;
         const description = descriptionValue || null;
@@ -51,7 +51,7 @@ export const usePostForm = () => {
      */
     const handleSubmit = (e) => {
         e.preventDefault();
-        handleClick();
+        submitForm();
     }
 
     return {
@@ -61,7 +61,7 @@ export const usePostForm = () => {
         handleConceptInput,
         handleDescriptionInput,
         handleCategoryInput,
-        handleClick,
+        submitForm,
         handleSubmit
     };
 }
