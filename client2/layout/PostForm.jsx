@@ -14,7 +14,7 @@ export const PostForm = () => {
     } = usePostForm();
 
     return (
-        <form onSubmit={handleSubmit} className="grid px-2 py-5 border border-violet-950 rounded-2xl shadow shadow-neutral-400">
+        <form onSubmit={handleSubmit} className="grid px-2 py-5 border border-violet-950 rounded-2xl shadow shadow-neutral-400 md:w-6/12 lg:w-8/12 ">
             <Input
                 placeholder="What are you thinking about?"
                 value={conceptValue}
