@@ -21,8 +21,8 @@ export const Input = ({
     id,
     maxLength = 30,
     className = "",
-    autoComplete = false,
-    required = "false",
+    autoComplete = "off",
+    required = false,
     onChange
 }) => {
     return (
