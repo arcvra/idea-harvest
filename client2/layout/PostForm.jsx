@@ -20,7 +20,7 @@ export const PostForm = () => {
                 value={conceptValue}
                 name="conceptInput"
                 id="conceptInput"
-                required={true}
+                required="true"
                 onChange={handleConceptInput} />
             <Input
                 placeholder="Want to elaborate?"

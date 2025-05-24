@@ -8,7 +8,7 @@
  * @param {number} [maxLength] - Input's max lenght
  * @param {string} [className] - Tailwind or custom classes
  * @param {boolean} [autoComplete=false] - Enable autocomplete
- * @param {boolean} [required] - Whether the field is required
+ * @param {string} [required="false"] - Whether the field is required
  * @param {function} onChange - Input handler function
  * @returns {JSX.Element}
  */
@@ -22,7 +22,7 @@ export const Input = ({
     maxLength = 30,
     className = "",
     autoComplete = false,
-    required = false,
+    required = "false",
     onChange
 }) => {
     return (
