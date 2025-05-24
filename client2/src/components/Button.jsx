@@ -1,8 +1,8 @@
-export const Button = ({ feature, action, name }) => {
+export const Button = ({ type = "button", onClick, name }) => {
     return (
         <button
-            type={feature}
-            onClick={action}
+            type={type}
+            onClick={onClick}
             className="px-2 py-1 cursor-pointer border-2 border-violet-900 rounded-xl"
         >
             {name}

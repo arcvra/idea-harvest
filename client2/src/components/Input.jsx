@@ -1,9 +1,10 @@
-export const Input = ({ placeholder, action }) => {
+export const Input = ({ type = "text", placeholder, value, onChange }) => {
     return (
         <input
-            type="text"
+            type={type}
+            value={value}
             placeholder={placeholder}
-            onChange={action}
+            onChange={onChange}
         />
     )
 }
