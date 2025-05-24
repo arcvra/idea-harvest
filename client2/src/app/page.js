@@ -1,12 +1,9 @@
-import { Button } from "@/components/Button";
+import { PostForm } from "../../layout/PostForm";
 
 export default function Home() {
   return (
     <>
-      <div>
-
-        <Button feature={"submit"} name={"What about a fancy, new idea?"} />
-      </div>
-      placeholder content</>
+      <PostForm />
+    </>
   );
 }
