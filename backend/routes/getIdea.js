@@ -1,4 +1,4 @@
-import { getRandomIdea } from "../database_config.js";
+import { getRandomIdea } from "#/database_config.js";
 
 export const APIgetRandom = (app) => {
     app.get("/idea/randomize", (req, res) => {

@@ -1,4 +1,4 @@
-import { postNewIdea } from "../database_config.js"
+import { postNewIdea } from "#/database_config.js"
 
 export const APIpostNew = (app) => {
     app.post("/idea/new", (req, res) => {

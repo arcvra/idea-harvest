@@ -6,8 +6,8 @@ import dotenv from "dotenv";
 dotenv.config();
 
 // database config
-import { APIgetRandom } from "./routes/getIdea.js";
-import { APIpostNew } from "./routes/postIdea.js";
+import { APIgetRandom } from "#/routes/getIdea.js";
+import { APIpostNew } from "#/routes/postIdea.js";
 
 // app settings
 const PORT = process.env.PORT || 5000;
