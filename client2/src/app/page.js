@@ -1,4 +1,4 @@
-import { PostForm } from "../../layout/PostForm";
+import { PostForm } from "@/feature/PostForm";
 
 export default function Home() {
   return (
